@@ -1,0 +1,284 @@
+/* Dark Theme Variables */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --primary-color: #4361ee;
+    --secondary-color: #3a0ca3;
+    --accent-color: #4cc9f0;
+    --danger-color: #f72585;
+}
+
+/* Dark Theme */
+.dark-theme {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --card-bg: #2d2d2d;
+    --border-color: #404040;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --primary-color: #4cc9f0;
+    --secondary-color: #4361ee;
+    --accent-color: #f72585;
+    --danger-color: #ff6b6b;
+}
+
+/* Apply Theme Variables */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+/* Navigation */
+.navbar {
+    background: rgba(var(--card-bg-rgb), 0.95);
+    box-shadow: 0 2px 10px var(--shadow-color);
+}
+
+.logo {
+    color: var(--primary-color);
+}
+
+.nav-link {
+    color: var(--text-color);
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.theme-toggle, .menu-toggle {
+    color: var(--text-color);
+}
+
+.theme-toggle:hover, .menu-toggle:hover {
+    background: var(--border-color);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, 
+        color-mix(in srgb, var(--bg-color) 0%, #c3cfe2 100%),
+        color-mix(in srgb, var(--bg-color) 0%, #f5f7fa 100%));
+}
+
+.hero p {
+    color: color-mix(in srgb, var(--text-color) 50%, transparent);
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+.number {
+    color: var(--primary-color);
+}
+
+.label {
+    color: color-mix(in srgb, var(--text-color) 50%, transparent);
+}
+
+/* Buttons */
+.btn-primary {
+    background: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+}
+
+.btn-secondary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Project Cards */
+.projects {
+    background: color-mix(in srgb, var(--bg-color) 95%, var(--border-color));
+}
+
+.project-card {
+    background: var(--card-bg);
+    box-shadow: 0 5px 15px var(--shadow-color);
+    border: 1px solid var(--border-color);
+}
+
+.project-icon {
+    color: var(--primary-color);
+}
+
+.tech-stack span {
+    background: color-mix(in srgb, var(--primary-color) 10%, transparent);
+    color: var(--primary-color);
+}
+
+.project-features i {
+    color: var(--accent-color);
+}
+
+.project-link {
+    background: color-mix(in srgb, var(--primary-color) 10%, transparent);
+    color: var(--primary-color);
+}
+
+.project-link:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* About Section */
+.about-sidebar > div {
+    background: var(--card-bg);
+    box-shadow: 0 3px 10px var(--shadow-color);
+    border: 1px solid var(--border-color);
+}
+
+.about-sidebar h3 {
+    color: var(--primary-color);
+}
+
+.interest-tags span {
+    background: color-mix(in srgb, var(--primary-color) 10%, transparent);
+    color: var(--primary-color);
+}
+
+.skill-bar {
+    background: var(--border-color);
+}
+
+.skill-level {
+    background: var(--primary-color);
+}
+
+/* Contact Section */
+.contact {
+    background: color-mix(in srgb, var(--bg-color) 95%, var(--border-color));
+}
+
+.contact-item i {
+    color: var(--primary-color);
+    background: color-mix(in srgb, var(--primary-color) 10%, transparent);
+}
+
+.social-links a {
+    background: var(--card-bg);
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+}
+
+.social-links a:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    background: var(--card-bg);
+    color: var(--text-color);
+    border-top: 1px solid var(--border-color);
+}
+
+.footer p {
+    color: color-mix(in srgb, var(--text-color) 50%, transparent);
+}
+
+/* Back to Top */
+.back-to-top {
+    background: var(--primary-color);
+    color: white;
+}
+
+.back-to-top:hover {
+    background: var(--secondary-color);
+}
+
+/* Form Elements */
+input, textarea, select {
+    background: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+/* Cards and Containers */
+.card, .container-bg {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+/* Text Colors */
+.text-muted {
+    color: color-mix(in srgb, var(--text-color) 50%, transparent);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+/* Border Colors */
+.border {
+    border-color: var(--border-color);
+}
+
+/* Background Colors */
+.bg-primary {
+    background: var(--primary-color);
+}
+
+.bg-secondary {
+    background: var(--secondary-color);
+}
+
+.bg-accent {
+    background: var(--accent-color);
+}
+
+/* Animation for Theme Toggle */
+body.dark-theme .theme-toggle i {
+    animation: rotate 0.5s ease;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Smooth Theme Transition */
+* {
+    transition: background-color 0.3s ease, 
+                color 0.3s ease, 
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
